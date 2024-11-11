@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --secondary:#1a7ad4;
+    --spacing:2.5em;
+}
+
+
+*
+{
+margin:0;
+padding:0;
+box-sizing: border-box;
+border:none;
+font-family:"Montserrat",serif;  
+}
+
+a{
+    color:#111;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.7em;
+    letter-spacing:1px;
+    transition:0.3s;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+
+header{
+    padding: var(--spacing);
+    background:#fff;
+    height:120px;
+}
+
+.container{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    max-width: 1350px;
+    height: 100%;
+    margin:0 auto;
+}
+/*====NAVBAR====*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing);
+    margin-right:120px;
+    width: 100%;
+}
+    .logoImg{
+        max-width: 120px;
+        margin-left: 120px  ;
+    }
+
+ul a, ul span
+{
+    font-weight:700;
+    background-image: linear-gradient(
+        0deg, #111,#111);
+    background-repeat: no-repeat;
+    background-size: 0 2px;
+    padding-bottom: 10px;
+    background-position: 50% bottom;
+}
+
+ul a:hover,
+ul span:hover,
+.controls span:hover,
+.controls span:hover:focus{
+    background-size: 100% 2px;
+    background-image: linear-gradient(
+        0deg, var(--secondary), var(--secondary)
+    );
+}
+
+nav li{
+    display: inline-block;
+    margin:0 0.7em;}
