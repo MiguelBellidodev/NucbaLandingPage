@@ -51,6 +51,7 @@ nav{
     margin-bottom: var(--spacing);
     margin-right:120px;
     width: 100%;
+    
 }
     .logoImg{
         max-width: 170px;
@@ -151,17 +152,30 @@ nav li{
 .description{
     height: 100%;
     display: flex;
-align-items: center;
-text-align: center;
+    margin-top:10px;
+
 }
 
-.description h1,h4{
-    margin:1rem 0;
+.description-article{
+    width: 600px;
 }
 
-.description p{
+.teamwork-image{
+    width: 70%;
+    margin-left:50px;
+}
+.description h2{
+    max-width:300px;
     text-align: center;
-    vertical-align: top; 
-    text-decoration: inherit; 
-    margin:1rem 0;
+    margin:auto;
+    margin-bottom:30px;
 }
+
+.description h4,p{
+    max-width:400px;
+    text-align: center;
+    margin:auto;
+    letter-spacing: 2px;
+    margin-bottom:10px;
+}
+
