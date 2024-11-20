@@ -32,17 +32,15 @@ ul{
 
 
 header{
-    padding: var(--spacing);
-    background:#fff;
+    padding: 10px;
     height:120px;
+    background-color:white;
 }
 
 .container{
     display: flex;
-    justify-content:space-between;
     align-items: center;
-    max-width: 1350px;
-    height: 100%;
+    max-width: 1200px;
     margin:0 auto;
 }
 /*====NAVBAR====*/
@@ -55,8 +53,8 @@ nav{
     width: 100%;
 }
     .logoImg{
-        max-width: 120px;
-        margin-left: 120px  ;
+        max-width: 170px;
+        margin-left:60px  ;
     }
 
 ul a, ul span
@@ -66,7 +64,7 @@ ul a, ul span
         0deg, #111,#111);
     background-repeat: no-repeat;
     background-size: 0 2px;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     background-position: 50% bottom;
 }
 
@@ -83,3 +81,87 @@ ul span:hover,
 nav li{
     display: inline-block;
     margin:0 0.7em;}
+
+/*====Hero====*/
+
+.container .hero{
+    max-width: 1200px;
+    margin-left: 140px;
+    align-items: center;
+    justify-content: space-between;
+    margin-top:10px;
+    background-color:blue;
+
+}
+
+
+.hero-title{
+    font-size: 2.5rem;
+    margin-bottom:20px;
+    margin-left:100px;
+}
+
+.hero-paragraph{
+    margin-bottom: 20px;
+    margin-left:100px;
+}
+
+.btn-CTA{
+    background-color:var(--secondary);
+    color:white;
+    font-style: uppercase;
+    height:45px;
+    border-radius:15px;
+    padding:15px 15px;
+    margin-left:200px;
+
+}
+.btn-CTA-message{
+    color:white;
+    font-size: 1rem;
+}
+
+
+.hero-image{
+    align-items:center;
+}
+
+.hero-rocket{
+    width: 500px;
+    margin-bottom: 50px;
+    transform: rotate(-50deg); /* Rota 20 grados hacia la izquierda */
+    transition: transform 1s;
+    animation: rebote 3s infinite; /* Duración de la animación y repetición infinita */
+        }
+
+        @keyframes rebote {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0); /* Posición original */
+            }
+            40% {
+                transform: translateY(-30px); /* Sube 30px */
+            }
+            60% {
+                transform: translateY(-15px); /* Sube 15px */
+            }
+}
+
+/*====Descripcion====*/
+
+.description{
+    height: 100%;
+    display: flex;
+align-items: center;
+text-align: center;
+}
+
+.description h1,h4{
+    margin:1rem 0;
+}
+
+.description p{
+    text-align: center;
+    vertical-align: top; 
+    text-decoration: inherit; 
+    margin:1rem 0;
+}
